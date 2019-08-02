@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class SkillDirection : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        
+        faceMouse();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        faceMouse();
+    }
+
+    void faceMouse()
+    {
+        Vector3 mousePosition = Input.mousePosition;
+        // Working off of main camera here. This may need to change when skills are implemented to work from incoming gameObject (or maybe original mouse cursor point?).
+        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+        Vector2 direction = new Vector2(
+            mousePosition.x - transform.position.x,
+            mousePosition.y - transform.position.y);
+
+        transform.up = direction;
     }
 }
