@@ -18,7 +18,7 @@ public class TimeDilation : MonoBehaviour
         
     }
 
-    // TODO: This needs to have an ability arg incoming, and used in while to stop dilation after ability cast 
+    // TODO: This needs to have an action/abilityWheel arg incoming, and used in while to stop dilation after ability cast 
     void DilateTimeForAbility()
     {
         float timeScaleAmount = .1f;
@@ -26,7 +26,7 @@ public class TimeDilation : MonoBehaviour
 
         Stopwatch sw = new Stopwatch();
         sw.Start();
-        while (sw.Elapsed <= TimeSpan.FromSeconds(dilationTimerInRealtimeSeconds))
+        while (sw.Elapsed <= TimeSpan.FromSeconds(dilationTimerInRealtimeSeconds)) // Don't forget to put incoming action here to stop time dilation when ability is cast.
         {
             Time.timeScale = timeScaleAmount;
         }
