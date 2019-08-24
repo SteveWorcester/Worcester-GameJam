@@ -10,7 +10,7 @@ public class SkillDirection : MonoBehaviour
     private float turnSpeed = 1;
     public float sliderFloat;
     public float chargeSpeed = 1.75f;
-
+    public Text text;
     // test area
 
 
@@ -27,6 +27,7 @@ public class SkillDirection : MonoBehaviour
         MoveToCharacter();
         GetChargeLevel();
         slider.value = sliderFloat;  //update slider value with current charge value
+        text.text = ("slider value = " + slider.value.ToString() + "\n " + "Mouse Position = " + Camera.main.ScreenToViewportPoint(Input.mousePosition) + "\n" + "Player position = " + player.transform.position + "\n");
     }
 
     void faceMouse()
