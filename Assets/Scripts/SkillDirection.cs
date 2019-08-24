@@ -11,9 +11,7 @@ public class SkillDirection : MonoBehaviour
     public float sliderFloat;
     public float chargeSpeed = 1.75f;
     public Text text;
-    // test area
-
-
+    public (float x, float y) mouseCoordinates = (Input.mousePosition.x, Input.mousePosition.y);
 
     void Start()
     {
@@ -26,11 +24,11 @@ public class SkillDirection : MonoBehaviour
         faceMouse();
         MoveToCharacter();
         GetChargeLevel();
-        slider.value = sliderFloat;  //update slider value with current charge value
+        slider.value = sliderFloat;
         text.text = ("slider value = " + slider.value.ToString() + "\n " + "Mouse Position = " + Camera.main.ScreenToViewportPoint(Input.mousePosition) + "\n" + "Player position = " + player.transform.position + "\n");
     }
 
-    void faceMouse()
+    public void faceMouse()
     {
         Vector3 mousePosition = Input.mousePosition;
         // Working off of main camera here. This may need to change when skills are implemented to work from incoming gameObject (or maybe original mouse cursor point?).
@@ -42,25 +40,31 @@ public class SkillDirection : MonoBehaviour
 
         transform.up = direction;
         transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
+
+        mouseCoordinates = (mousePosition.x, mousePosition.y);
     }
 
-    public void MoveToCharacter()  //Make the slider move on top of the player?
+    public void MoveToCharacter()
     {
         transform.position = player.transform.position;
     }
 
-    public void GetChargeLevel()  //only builds and releases charge value.
+    /// <summary>
+    /// Builds and releases charge value.
+    /// </summary>
+    /// <returns>sliderFloat Charge Level</returns>
+    public float GetChargeLevel()
     {
-        //let it charge up when jump is pressed
         if (Input.GetMouseButton(0))  //don't forget a cooldown timer, or maybe a minimum charge level to restrict use?
         {
             sliderFloat += Time.deltaTime * chargeSpeed;
         }
         
-        //make something happen when jump is released, based on the charge value
         if (Input.GetMouseButtonUp(0))
         {
             sliderFloat = 0;
         }
+
+        return sliderFloat;
     }
 }

@@ -43,7 +43,7 @@ public class PhysicsObject : MonoBehaviour
         //make the slider on child PlayerPlatformerController roatate based on current direction pressed?
     }
 
-    protected virtual void ComputeVelocity() {}
+    public virtual void ComputeVelocity() {}
 
     void FixedUpdate()  //The ONLY thing allowed in here is physics stuff - collisions, checks, etc.
     {

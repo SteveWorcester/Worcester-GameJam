@@ -17,33 +17,33 @@ public class PlayerPlatformerController : PhysicsObject
     public Animator animator;
     public Slider slider;
     public SkillDirection skillDirection;
-    public Rigidbody2D rb2d;
-
+    public Rigidbody2D rbody2d;
 
     void Awake()
     {
-        //grab the spriterenderer, and apply the animator, even if they won't do shit for a bit.
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
-    }
+    }   
 
     //a velocity grabber of some sort - lets us calculate if player is going too fast, and stop it.
-    protected override void ComputeVelocity()
+    public override void ComputeVelocity()
     {
-        Vector2 move = Vector2.zero;
+        float jumpMultiplier = 1f;
+
+        Vector2 move = new Vector2(0, 0);
         move.x = Input.GetAxis("Horizontal");
+
+        float directionX = (skillDirection.mouseCoordinates.x - transform.position.x) * jumpMultiplier;
+        float directionY = (skillDirection.mouseCoordinates.y - transform.position.y) * jumpMultiplier;
 
         if (Input.GetMouseButtonUp(0) && isGrounded)  //TEMP JUMP, this is just to make me happy for a short period of time.
         {
-            //set 2d velocity, targeting current mouse location.
-            Vector2 mouse = new Vector2(
-                Camera.main.ScreenToViewportPoint(Input.mousePosition).x - transform.position.x, 
-                Camera.main.ScreenToViewportPoint(Input.mousePosition).y - transform.position.y);
-            distance = slider.value;
-            direction = mouse / distance; // This is now the normalized direction.
-            velocity = new Vector2(Mathf.Clamp(slider.value * 10, 0,10), Mathf.Clamp(slider.value * 10, 0, 10));
+            var mouseCoordinates = skillDirection.mouseCoordinates;
 
+            distance = slider.value * 10;
+
+            velocity = new Vector2(directionX, directionY);
             rb2d.AddForce(velocity, ForceMode2D.Impulse);
         }
 
