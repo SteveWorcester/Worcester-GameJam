@@ -11,12 +11,11 @@ public class SkillDirection : MonoBehaviour
     public float sliderFloat;
     public float chargeSpeed = 1.75f;
     public Text text;
-    public (float x, float y) mouseCoordinates = (Input.mousePosition.x, Input.mousePosition.y);
+    public (float x, float y) mouseCoordinates;
 
     void Start()
     {
         slider = GetComponent<Slider>();
-        faceMouse();
     }
 
     void Update()
@@ -30,9 +29,8 @@ public class SkillDirection : MonoBehaviour
 
     public void faceMouse()
     {
-        Vector3 mousePosition = Input.mousePosition;
         // Working off of main camera here. This may need to change when skills are implemented to work from incoming gameObject (or maybe original mouse cursor point?).
-        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         Vector2 direction = new Vector2(
             mousePosition.x - transform.position.x,
