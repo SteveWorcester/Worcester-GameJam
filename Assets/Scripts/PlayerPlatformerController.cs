@@ -11,7 +11,6 @@ public class PlayerPlatformerController : PhysicsObject
     public float maxSpeed = 7;
     public float jumpTakeOffSpeed = 7;
     public float chargeSpeed;
-    public float x, y, distance;
     public Vector2 direction;
     public SpriteRenderer spriteRenderer;
     public Animator animator;
@@ -29,35 +28,32 @@ public class PlayerPlatformerController : PhysicsObject
     //a velocity grabber of some sort - lets us calculate if player is going too fast, and stop it.
     public override void ComputeVelocity()
     {
-        float jumpMultiplier = 1f;
+        float jumpMultiplier = 5f;
 
         Vector2 move = new Vector2(0, 0);
         move.x = Input.GetAxis("Horizontal");
 
-        float directionX = (skillDirection.mouseCoordinates.x - transform.position.x) * jumpMultiplier;
-        float directionY = (skillDirection.mouseCoordinates.y - transform.position.y) * jumpMultiplier;
+        var mouseCoordinates = skillDirection.mouseCoordinates;
+        float directionX = ((skillDirection.mouseCoordinates.x) - transform.position.x);
+        float directionY = ((skillDirection.mouseCoordinates.y) - transform.position.y);
 
-        if (Input.GetMouseButtonUp(0) && isGrounded)  //TEMP JUMP, this is just to make me happy for a short period of time.
+        if (Input.GetMouseButtonUp(0) && isGrounded)  //JUMP, this now works... WOO!
         {
-            var mouseCoordinates = skillDirection.mouseCoordinates;
-
-            distance = slider.value * 10;
-
             velocity = new Vector2(directionX, directionY);
+            velocity.Normalize();
+            velocity = velocity * jumpMultiplier * slider.value;
             rb2d.AddForce(velocity, ForceMode2D.Impulse);
+            print(velocity.x + "\n" + velocity.y);
         }
 
-        //since we're using sprites, if you're moving backwards - horizontal flip the sprite.
-        bool flipSprite = (spriteRenderer.flipX ? (move.x >= 0.01f) : (move.x <= 0.01f));
+        // THE ANIMATION ZONE!!!!!
+        if (Input.GetKeyDown(KeyCode.D))  //make the little dude face the correct way if you press a button - not based on movement anymore because it fucking sucks.
+        {spriteRenderer.flipX = false;}
+        else if (Input.GetKeyDown(KeyCode.A))
+        {spriteRenderer.flipX = true;}
 
-        if (flipSprite)  //if moving -x, flip that sprite
-        {
-            spriteRenderer.flipX = !spriteRenderer.flipX;
-        }
-
-        //jumping animation bullshit
-        animator.SetBool("grounded", isGrounded);  //this will be more important if we can bother with jump animations
-        animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
+        animator.SetBool("isGrounded", isGrounded);        //jumping animation bullshit - apply grounded bool to our animation variable.
+        animator.SetFloat("Speed", Mathf.Abs(velocity.x) / maxSpeed);   //Apply speed to our animation variable
         targetVelocity = move * maxSpeed;
     }
 }

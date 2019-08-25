@@ -269,7 +269,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.5, y: 0.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -306,14 +306,12 @@ MonoBehaviour:
   maxSpeed: 7
   jumpTakeOffSpeed: 7
   chargeSpeed: 10
-  x: 0
-  y: 0
-  distance: 0
   direction: {x: 0, y: 0}
   spriteRenderer: {fileID: 0}
   animator: {fileID: 0}
   slider: {fileID: 601005526}
   skillDirection: {fileID: 601005527}
+  rbody2d: {fileID: 0}
 --- !u!50 &132500229
 Rigidbody2D:
   serializedVersion: 4
@@ -353,7 +351,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.5, y: 0.5}
-    newSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.5, y: 0.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -371,7 +369,7 @@ Animator:
   m_GameObject: {fileID: 132500225}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6a9fe54191108974db74ce9169e921bf, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
