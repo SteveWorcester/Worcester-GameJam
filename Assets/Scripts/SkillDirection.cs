@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class SkillDirection : MonoBehaviour
@@ -12,6 +10,7 @@ public class SkillDirection : MonoBehaviour
     public float chargeSpeed = 1.75f;
     public Text text;
     public (float x, float y) mouseCoordinates;
+    private TimeDilation td;
 
     void Start()
     {
@@ -25,11 +24,12 @@ public class SkillDirection : MonoBehaviour
         GetChargeLevel();
         slider.value = sliderFloat;
         text.text = ("slider value = " + slider.value.ToString() + "\n " + "Mouse Position = " + Camera.main.ScreenToViewportPoint(Input.mousePosition) + "\n" + "Player position = " + player.transform.position + "\n");
+        Time.timeScale += Time.unscaledDeltaTime * (1f / td.dilationTimerInRealtimeSeconds);
+        Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
     }
 
     public void faceMouse()
     {
-        // Working off of main camera here. This may need to change when skills are implemented to work from incoming gameObject (or maybe original mouse cursor point?).
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         Vector2 direction = new Vector2(
@@ -37,7 +37,7 @@ public class SkillDirection : MonoBehaviour
             mousePosition.y - transform.position.y);
 
         transform.up = direction;
-        transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
+        transform.Rotate(Vector2.up, -turnSpeed * Time.deltaTime);
 
         mouseCoordinates = (mousePosition.x, mousePosition.y);
     }
@@ -53,12 +53,13 @@ public class SkillDirection : MonoBehaviour
     /// <returns>sliderFloat Charge Level</returns>
     public float GetChargeLevel()
     {
-        if (Input.GetMouseButton(0))  //don't forget a cooldown timer, or maybe a minimum charge level to restrict use?
+        // TODO: cooldown timer/min charge?
+        if (Input.GetMouseButton(0) || Input.GetKey(KeyCode.Space))  
         {
-            sliderFloat += Time.deltaTime * chargeSpeed;
+            sliderFloat += Time.unscaledDeltaTime * chargeSpeed;
         }
         
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0) || Input.GetKeyUp(KeyCode.Space))
         {
             sliderFloat = 0;
         }

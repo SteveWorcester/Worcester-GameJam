@@ -1,9 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-
-//this class will be built from physicsobject, and contains the sprite - and speed variables.  It also calculates its own velocity.
 
 public class PlayerPlatformerController : PhysicsObject
 {
@@ -17,18 +13,22 @@ public class PlayerPlatformerController : PhysicsObject
     public Slider slider;
     public SkillDirection skillDirection;
     public Rigidbody2D rbody2d;
+    TimeDilation td;
 
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
-    }   
+    }
 
-    //a velocity grabber of some sort - lets us calculate if player is going too fast, and stop it.
+    /// <summary>
+    /// Used to limit player speed and allows player to jump
+    /// </summary>
     public override void ComputeVelocity()
     {
         float jumpMultiplier = 5f;
+        float knockbackMultiplier = -5f;
 
         Vector2 move = new Vector2(0, 0);
         move.x = Input.GetAxis("Horizontal");
@@ -37,23 +37,32 @@ public class PlayerPlatformerController : PhysicsObject
         float directionX = ((skillDirection.mouseCoordinates.x) - transform.position.x);
         float directionY = ((skillDirection.mouseCoordinates.y) - transform.position.y);
 
-        if (Input.GetMouseButtonUp(0) && isGrounded)  //JUMP, this now works... WOO!
+        if (Input.GetKeyUp(KeyCode.Space) && isGrounded)  // Jump
         {
             velocity = new Vector2(directionX, directionY);
             velocity.Normalize();
             velocity = velocity * jumpMultiplier * slider.value;
             rb2d.AddForce(velocity, ForceMode2D.Impulse);
-            print(velocity.x + "\n" + velocity.y);
+            print($"jump velocity: x:{velocity.x}, y:{velocity.y}");
+        }
+
+        if (Input.GetMouseButtonUp(0)) // "Shoot"
+        {
+            velocity = new Vector2(directionX, directionY);
+            velocity.Normalize();
+            velocity = velocity * knockbackMultiplier * slider.value;
+            rb2d.AddForce(velocity, ForceMode2D.Impulse);
+            print($"knockback velocity: x:{velocity.x}, y:{velocity.y}");
         }
 
         // THE ANIMATION ZONE!!!!!
-        if (Input.GetKeyDown(KeyCode.D))  //make the little dude face the correct way if you press a button - not based on movement anymore because it fucking sucks.
+        if (Input.GetKeyDown(KeyCode.D))
         {spriteRenderer.flipX = false;}
         else if (Input.GetKeyDown(KeyCode.A))
         {spriteRenderer.flipX = true;}
 
-        animator.SetBool("isGrounded", isGrounded);        //jumping animation bullshit - apply grounded bool to our animation variable.
-        animator.SetFloat("Speed", Mathf.Abs(velocity.x) / maxSpeed);   //Apply speed to our animation variable
+        animator.SetBool("isGrounded", isGrounded);
+        animator.SetFloat("Speed", Mathf.Abs(velocity.x) / maxSpeed);   
         targetVelocity = move * maxSpeed;
     }
 }
