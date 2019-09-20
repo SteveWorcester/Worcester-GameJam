@@ -9,11 +9,17 @@ namespace Player
     {
         public PlayerPlatformerController _player;
 
-        KeyCode moveLeft = KeyCode.A;
-        KeyCode moveRight = KeyCode.D;
-        KeyCode grapplingHook = KeyCode.Mouse1;
-        KeyCode jump = KeyCode.Space;
-        KeyCode shoot = KeyCode.Mouse0;
+        #region Private Fields
+
+        KeyCode _moveLeft = KeyCode.A;
+        KeyCode _moveRight = KeyCode.D;
+        KeyCode _grapplingHook = KeyCode.Mouse1;
+        KeyCode _jump = KeyCode.Space;
+        KeyCode _shoot = KeyCode.Mouse0;
+
+        #endregion
+
+
 
         void FixedUpdate()
         {
@@ -24,27 +30,28 @@ namespace Player
         public void HandleMovementInput()
         {
             // Edit PlayerPlatformerController.Move() instead of these values!
-            if (Input.GetKey(moveLeft))
+            if (Input.GetKey(_moveLeft))
             {
                 _player.Move(-1f, false); 
             }
-            else if (Input.GetKey(moveRight))
+            if (Input.GetKey(_moveRight))
             {
                 _player.Move(1f, false);
+            }
+            if (Input.GetKeyDown(_jump))
+            {
+                _player.Move(0, true);
             }
         }
 
         public void HandleSkillsInput()
         {
-            if (Input.GetKey(jump))
-            {
-                _player.Move(0, true);
-            }
-            if (Input.GetKey(shoot))
+
+            if (Input.GetKey(_shoot))
             {
                 
             }
-            if (Input.GetKey(grapplingHook))
+            if (Input.GetKey(_grapplingHook))
             {
                 
             }
