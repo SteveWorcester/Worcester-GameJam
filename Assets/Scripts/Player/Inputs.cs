@@ -7,7 +7,8 @@ namespace Player
 {
     public class Inputs : MonoBehaviour
     {
-        PlayerPlatformerController player;
+        public PlayerPlatformerController _player;
+
         KeyCode moveLeft = KeyCode.A;
         KeyCode moveRight = KeyCode.D;
         KeyCode grapplingHook = KeyCode.Mouse1;
@@ -23,27 +24,27 @@ namespace Player
         public void HandleMovementInput()
         {
             // Edit PlayerPlatformerController.Move() instead of these values!
-            if (Input.GetKeyDown(moveLeft))
+            if (Input.GetKey(moveLeft))
             {
-                player.Move(-1f, false); 
+                _player.Move(-1f, false); 
             }
-            else if (Input.GetKeyDown(moveRight))
+            else if (Input.GetKey(moveRight))
             {
-                player.Move(1f, false);
+                _player.Move(1f, false);
             }
         }
 
         public void HandleSkillsInput()
         {
-            if (Input.GetKeyDown(jump))
+            if (Input.GetKey(jump))
             {
-                player.Move(0, true);
+                _player.Move(0, true);
             }
-            else if (Input.GetKeyDown(shoot))
+            if (Input.GetKey(shoot))
             {
                 
             }
-            else if (Input.GetKeyDown(grapplingHook))
+            if (Input.GetKey(grapplingHook))
             {
                 
             }

@@ -6,8 +6,6 @@ namespace Player
     public class PlayerPlatformerController : MonoBehaviour
     {
 
-        public Inputs InputHandler;
-
         #region Private Fields
 
         private float m_JumpForce = 400f;
