@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Player;
+using UnityEngine;
 using UnityEngine.UI;
 
 
@@ -6,6 +7,38 @@ namespace Skills
 {
     public class Skills : MonoBehaviour
     {
+        public PlayerPlatformerController player;
+
+        #region Fields
+        // Modifiable Fields: 
+        private float m_jumpForce = 400f;
+        public const int _amountOfJumps = 2;
+
+        // Unmodifiable Fields: 
+
+        [HideInInspector] public int jumpsLeft { get; set; }
+
+        #endregion
+        public void FixedUpdate()
+        {
+            
+        }
+
+        public int Jump()
+        {
+            if (jumpsLeft > 0)
+            {
+                player.m_rigidbody2D.AddForce(new Vector2(0f, m_jumpForce));
+                jumpsLeft--;
+            }
+            return jumpsLeft;
+        }
+
+        public void ResetJumps()
+        {
+            jumpsLeft = _amountOfJumps;
+        }
+
 
         //jump?
         /*
