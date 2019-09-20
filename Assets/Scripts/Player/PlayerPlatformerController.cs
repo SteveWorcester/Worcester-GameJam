@@ -5,19 +5,22 @@ namespace Player
 {
     public class PlayerPlatformerController : MonoBehaviour
     {
+        public Skills.Skills _Skills;
 
-        #region Private Fields
+        #region Fields
 
-        private float m_jumpForce = 400f;
-        // Accelerate/decelerate ratio. Higher = slower accel/decel. Keep less than 1.
+        // Modifiable Fields: 
+        // Accelerate/decelerate ratio. Higher = slower accel/decel.
         [Range(0, .3f)] private float m_movementSmoothingTime = .05f; 
         private float m_moveSpeedMultiplier = 5f;
         private bool m_airControl = true;  // Can you steer left/right while jumping?
 
+
+        // Unmodifiable Fields: 
         private LayerMask m_whatIsGround;
         private Transform m_groundCheck;
         private bool m_grounded;
-        private Rigidbody2D m_rigidbody2D;
+        [HideInInspector] public Rigidbody2D m_rigidbody2D;
         private bool m_facingRight = true;
         private Vector2 m_velocity = Vector2.zero;
 
@@ -35,11 +38,17 @@ namespace Player
             m_rigidbody2D = GetComponent<Rigidbody2D>();
 
             if (OnLandEvent == null)
+            {
                 OnLandEvent = new UnityEvent();
+            }
         }
 
         private void FixedUpdate()
         {
+            // Tech debt hack to get single and double jumps work until colliders are made
+            _Skills.ResetJumps();
+            // end hack
+
             bool wasGrounded = m_grounded;
             m_grounded = false;
 
@@ -49,6 +58,7 @@ namespace Player
                 if (colliders[i].gameObject != gameObject)
                 {
                     m_grounded = true;
+                    _Skills.ResetJumps();
                     if (!wasGrounded)
                     {
                         OnLandEvent.Invoke();
@@ -78,13 +88,6 @@ namespace Player
                     ChangeSpriteFacing();
                 }
             }
-
-            // TODO: Tech Debt - After LayerMasks and Colliders are added, add && m_isGrounded here
-            if (jump)
-            {
-                m_grounded = false;
-                m_rigidbody2D.AddForce(new Vector2(0f, m_jumpForce));
-            }
         }
 
         private void ChangeSpriteFacing()
@@ -95,6 +98,8 @@ namespace Player
             theScale.x *= -1;
             transform.localScale = theScale;
         }
+
+
     }
 
 

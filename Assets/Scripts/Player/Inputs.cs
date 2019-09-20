@@ -1,15 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Skills;
 
 namespace Player
 {
     public class Inputs : MonoBehaviour
     {
         public PlayerPlatformerController _player;
+        public Skills.Skills _Skills;
 
-        #region Private Fields
+        #region Fields
 
         KeyCode _moveLeft = KeyCode.A;
         KeyCode _moveRight = KeyCode.D;
@@ -38,15 +38,15 @@ namespace Player
             {
                 _player.Move(1f, false);
             }
-            if (Input.GetKeyDown(_jump))
-            {
-                _player.Move(0, true);
-            }
+
         }
 
         public void HandleSkillsInput()
         {
-
+            if (Input.GetKeyDown(_jump))
+            {
+                _Skills.Jump();
+            }
             if (Input.GetKey(_shoot))
             {
                 
