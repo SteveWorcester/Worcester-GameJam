@@ -8,17 +8,18 @@ namespace Player
 
         #region Private Fields
 
-        private float m_JumpForce = 400f;
-        [Range(0, .3f)] private float m_movementSmoothingTime = .05f; // Time it takes to accelerate/decelerate.
-        private float m_moveSpeedMultiplier = 10f;
-        private bool m_AirControl = true;  // Can you steer left/right while jumping?
-        private LayerMask m_WhatIsGround;
-        private Transform m_GroundCheck;
-        private Transform m_CeilingCheck;
-        private bool m_Grounded;
-        private Rigidbody2D m_Rigidbody2D;
-        private bool m_FacingRight = true;
-        private Vector2 m_Velocity = Vector2.zero;
+        private float m_jumpForce = 400f;
+        // Accelerate/decelerate ratio. Higher = slower accel/decel. Keep less than 1.
+        [Range(0, .3f)] private float m_movementSmoothingTime = .05f; 
+        private float m_moveSpeedMultiplier = 5f;
+        private bool m_airControl = true;  // Can you steer left/right while jumping?
+
+        private LayerMask m_whatIsGround;
+        private Transform m_groundCheck;
+        private bool m_grounded;
+        private Rigidbody2D m_rigidbody2D;
+        private bool m_facingRight = true;
+        private Vector2 m_velocity = Vector2.zero;
 
         #endregion
 
@@ -31,7 +32,7 @@ namespace Player
 
         private void Awake()
         {
-            m_Rigidbody2D = GetComponent<Rigidbody2D>();
+            m_rigidbody2D = GetComponent<Rigidbody2D>();
 
             if (OnLandEvent == null)
                 OnLandEvent = new UnityEvent();
@@ -39,15 +40,15 @@ namespace Player
 
         private void FixedUpdate()
         {
-            bool wasGrounded = m_Grounded;
-            m_Grounded = false;
+            bool wasGrounded = m_grounded;
+            m_grounded = false;
 
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, m_WhatIsGround);
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(m_groundCheck.position, m_whatIsGround);
             for (int i = 0; i < colliders.Length; i++)
             {
                 if (colliders[i].gameObject != gameObject)
                 {
-                    m_Grounded = true;
+                    m_grounded = true;
                     if (!wasGrounded)
                     {
                         OnLandEvent.Invoke();
@@ -63,31 +64,32 @@ namespace Player
         /// <param name="jump"></param>
         public void Move(float moveDirection, bool jump)
         {
-            if (m_Grounded || m_AirControl)
+            if (m_grounded || m_airControl)
             {
-                Vector2 targetVelocity = new Vector2(moveDirection * m_moveSpeedMultiplier, m_Rigidbody2D.velocity.y);
-                m_Rigidbody2D.velocity = Vector2.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_movementSmoothingTime);
+                Vector2 targetVelocity = new Vector2(moveDirection * m_moveSpeedMultiplier, m_rigidbody2D.velocity.y);
+                m_rigidbody2D.velocity = Vector2.SmoothDamp(m_rigidbody2D.velocity, targetVelocity, ref m_velocity, m_movementSmoothingTime);
 
-                if (moveDirection > 0 && !m_FacingRight)
+                if (moveDirection > 0 && !m_facingRight)
                 {
                     ChangeSpriteFacing();
                 }
-                else if (moveDirection < 0 && m_FacingRight)
+                else if (moveDirection < 0 && m_facingRight)
                 {
                     ChangeSpriteFacing();
                 }
             }
 
-            if (m_Grounded && jump)
+            // TODO: Tech Debt - After LayerMasks and Colliders are added, add && m_isGrounded here
+            if (jump)
             {
-                m_Grounded = false;
-                m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+                m_grounded = false;
+                m_rigidbody2D.AddForce(new Vector2(0f, m_jumpForce));
             }
         }
 
         private void ChangeSpriteFacing()
         {
-            m_FacingRight = !m_FacingRight;
+            m_facingRight = !m_facingRight;
 
             Vector2 theScale = transform.localScale;
             theScale.x *= -1;
