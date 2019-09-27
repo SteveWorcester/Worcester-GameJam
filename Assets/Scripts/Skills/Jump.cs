@@ -1,16 +1,15 @@
 ﻿using Player;
 using UnityEngine;
 
-public class Jump : MonoBehaviour
+public class Jump : DirectionalCharge
 {
     public KeyCode JumpButton = KeyCode.Space;
-    [HideInInspector] public int jumpsLeft { get; set; }
+    [HideInInspector] public int JumpsLeft { get; set; }
 
     public PlayerPlatformerController player;
-    public DirectionalCharge charger;
 
     private float m_jumpForce = 400f;
-    [HideInInspector] public const int _amountOfJumps = 2;
+    private const int _amountOfJumps = 2;
     private bool jumpRequiresCharge = false;
 
     public void Update()
@@ -18,23 +17,43 @@ public class Jump : MonoBehaviour
         PlayerJump();
     }
 
-    public int PlayerJump()
+    public void PlayerJump()
     {
-        if (jumpRequiresCharge)
+        if (Input.GetKey(JumpButton))
         {
-            charger.StartCharge();
+            if (jumpRequiresCharge)
+            {
+                StartCharge();
+            }
         }
 
-        if (jumpsLeft > 0)
+        else if (!jumpRequiresCharge)
         {
-            player.m_rigidbody2D.AddForce(new Vector2(0f, m_jumpForce));
-            jumpsLeft--;
+            JumpAction();
         }
-        return jumpsLeft;
+
+        if (Input.GetKeyUp(JumpButton))
+        {
+            if (jumpRequiresCharge)
+            {
+                JumpAction();
+            }
+        }
+
+        if (JumpsLeft > 0)
+        {
+
+        }
     }
 
     public void ResetJumps()
     {
-        jumpsLeft = _amountOfJumps;
+        JumpsLeft = _amountOfJumps;
+    }
+
+    private void JumpAction()
+    {
+        player.m_rigidbody2D.AddForce(new Vector2(0f, m_jumpForce));
+        JumpsLeft--;
     }
 }

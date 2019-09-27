@@ -6,7 +6,7 @@ using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DirectionalCharge : MonoBehaviour
+public abstract class DirectionalCharge : MonoBehaviour
 {
     [HideInInspector] public bool IsSkillCharging { get; set; }
 

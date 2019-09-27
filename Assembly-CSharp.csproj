@@ -64,8 +64,8 @@
   <ItemGroup>
     <Compile Include="Assets\Move.cs" />
     <Compile Include="Assets\Scripts\PhysicsObject.cs" />
-    <Compile Include="Assets\Scripts\Player\Inputs.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerPlatformerController.cs" />
+    <Compile Include="Assets\Scripts\Skills\Aimer.cs" />
     <Compile Include="Assets\Scripts\Skills\DirectionalCharge.cs" />
     <Compile Include="Assets\Scripts\Skills\Jump.cs" />
     <Compile Include="Assets\Scripts\Skills\Shotgun.cs" />
