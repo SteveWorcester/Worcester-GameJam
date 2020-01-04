@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1666186674, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 2
+  lastUpdatedAtString: 2020-01-03T19:28:22.791-08:00
+  initializedAtString: 2020-01-03T19:28:22.777-08:00
+  localBranches:
+  - name: master
+    tracking: origin/master
+  - name: Shotgun
+    tracking: origin/Shotgun
+  remoteBranches:
+  - name: origin/BogDownInTheValleyO
+    tracking: '[None]'
+  - name: origin/HEAD
+    tracking: '[None]'
+  - name: origin/master
+    tracking: '[None]'
+  - name: origin/MattBranch
+    tracking: '[None]'
+  - name: origin/Shotgun
+    tracking: '[None]'
+  remotes:
+  - name: origin
+    url: https://github.com/SteveWorcester/Worcester-GameJam.git
+    login: 
+    user: 
+    host: 
+    function: 0
+    token: 
+  localConfigBranches:
+    keys:
+    - master
+    - Shotgun
+    values:
+    - name: master
+      remote:
+        name: origin
+        url: https://github.com/SteveWorcester/Worcester-GameJam.git
+      trackingBranch: master
+    - name: Shotgun
+      remote:
+        name: origin
+        url: https://github.com/SteveWorcester/Worcester-GameJam.git
+      trackingBranch: Shotgun
+  remoteConfigBranches:
+    keys:
+    - origin
+    subKeys:
+    - Values:
+      - BogDownInTheValleyO
+      - HEAD
+      - master
+      - MattBranch
+      - Shotgun
+    subKeyValues:
+    - Values:
+      - name: BogDownInTheValleyO
+        remote:
+          name: origin
+          url: https://github.com/SteveWorcester/Worcester-GameJam.git
+        trackingBranch: 
+      - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/SteveWorcester/Worcester-GameJam.git
+        trackingBranch: 
+      - name: master
+        remote:
+          name: origin
+          url: https://github.com/SteveWorcester/Worcester-GameJam.git
+        trackingBranch: 
+      - name: MattBranch
+        remote:
+          name: origin
+          url: https://github.com/SteveWorcester/Worcester-GameJam.git
+        trackingBranch: 
+      - name: Shotgun
+        remote:
+          name: origin
+          url: https://github.com/SteveWorcester/Worcester-GameJam.git
+        trackingBranch: 
+  configRemotes:
+    keys:
+    - origin
+    values:
+    - name: origin
+      url: https://github.com/SteveWorcester/Worcester-GameJam.git

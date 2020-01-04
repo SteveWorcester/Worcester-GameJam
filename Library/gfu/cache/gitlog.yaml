@@ -1,0 +1,1812 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2019-09-26T21:37:48.765-07:00
+  initializedAtString: 2019-09-24T18:59:53.789-07:00
+  log:
+  - commitID: 2b9b153a44592685cb40fad2dbd62ee40cd17e96
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: Worcester.Steve@Gmail.com
+    commitEmail: Worcester.Steve@Gmail.com
+    commitName: Steve Worcester
+    summary: work in progress
+    description: 
+    timeString: 2019-09-26T21:34:23.000-07:00
+    commitTimeString: 2019-09-26T21:34:23.000-07:00
+    changes:
+    - path: Assembly-CSharp.csproj
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assembly-CSharp.csproj
+      projectPath: Assembly-CSharp.csproj
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\Player\Inputs.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\Inputs.cs
+      projectPath: Assets\Scripts\Player\Inputs.cs
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Scripts\Skills\Aimer.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Skills\Aimer.cs
+      projectPath: Assets\Scripts\Skills\Aimer.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Skills\Aimer.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Skills\Aimer.cs.meta
+      projectPath: Assets\Scripts\Skills\Aimer.cs.meta
+      originalPath: Assets\Scripts\Player\Inputs.cs.meta
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Assets\Scripts\Skills\DirectionalCharge.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Skills\DirectionalCharge.cs
+      projectPath: Assets\Scripts\Skills\DirectionalCharge.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\Skills\Jump.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Skills\Jump.cs
+      projectPath: Assets\Scripts\Skills\Jump.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 43b3d6cea9615a45bc62312509101a5742647f78
+    mergeA: b6342f465432ee08dbb8fe0bce4c61df9700b186
+    mergeB: 76c553921572e1967bcf895d948b94817794044c
+    authorName: Steve Worcester
+    authorEmail: Worcester.Steve@Gmail.com
+    commitEmail: Worcester.Steve@Gmail.com
+    commitName: Steve Worcester
+    summary: Merge branch 'master' into Shotgun
+    description: 
+    timeString: 2019-09-24T18:44:07.000-07:00
+    commitTimeString: 2019-09-24T18:44:07.000-07:00
+    changes: []
+  - commitID: 76c553921572e1967bcf895d948b94817794044c
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: worcester.steve@gmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Update .gitignore
+    description: 
+    timeString: 2019-09-24T18:43:12.000-07:00
+    commitTimeString: 2019-09-24T18:43:12.000-07:00
+    changes:
+    - path: .gitignore
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: b6342f465432ee08dbb8fe0bce4c61df9700b186
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: Worcester.Steve@Gmail.com
+    commitEmail: Worcester.Steve@Gmail.com
+    commitName: Steve Worcester
+    summary: tempcommit
+    description: tempcommit
+    timeString: 2019-09-24T18:42:09.000-07:00
+    commitTimeString: 2019-09-24T18:42:09.000-07:00
+    changes:
+    - path: .gitignore
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assembly-CSharp-Editor-firstpass.csproj
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assembly-CSharp-Editor-firstpass.csproj
+      projectPath: Assembly-CSharp-Editor-firstpass.csproj
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assembly-CSharp.csproj
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assembly-CSharp.csproj
+      projectPath: Assembly-CSharp.csproj
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Skills\DirectionalCharge.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Skills\DirectionalCharge.cs
+      projectPath: Assets\Scripts\Skills\DirectionalCharge.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Skills\DirectionalCharge.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Skills\DirectionalCharge.cs.meta
+      projectPath: Assets\Scripts\Skills\DirectionalCharge.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Skills\Jump.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Skills\Jump.cs
+      projectPath: Assets\Scripts\Skills\Jump.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Skills\Jump.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Skills\Jump.cs.meta
+      projectPath: Assets\Scripts\Skills\Jump.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Skills\Shotgun.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Skills\Shotgun.cs
+      projectPath: Assets\Scripts\Skills\Shotgun.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Skills\Shotgun.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Skills\Shotgun.cs.meta
+      projectPath: Assets\Scripts\Skills\Shotgun.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Worcester-GameJam.sln
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Worcester-GameJam.sln
+      projectPath: Worcester-GameJam.sln
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: cb19040978632ee98de6e9c347c1c97ea81a24e3
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: worcester.steve@gmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Update .gitignore
+    description: 
+    timeString: 2019-09-24T18:36:11.000-07:00
+    commitTimeString: 2019-09-24T18:36:11.000-07:00
+    changes:
+    - path: .gitignore
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 5b9137893f9b636ec9bc434da034a59257a941e6
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: worcester.steve@gmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Update .gitignore
+    description: 
+    timeString: 2019-09-24T09:22:39.000-07:00
+    commitTimeString: 2019-09-24T09:22:39.000-07:00
+    changes:
+    - path: .gitignore
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 9928e1ff636a21cd1748308d3132267bfc88471d
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: worcester.steve@gmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Update .gitignore
+    description: 
+    timeString: 2019-09-24T09:21:53.000-07:00
+    commitTimeString: 2019-09-24T09:21:53.000-07:00
+    changes:
+    - path: .gitignore
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 2a2a39a9ac3b588ff792f59c68048f6f6f75c45f
+    mergeA: dc578a0137b04f3f19793d9024749964e71507b5
+    mergeB: 71f0c92ea5c1e81d7d643a5049111b784fce04b6
+    authorName: Steve Worcester
+    authorEmail: worcester.steve@gmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: 'Merge pull request #19 from SteveWorcester/Double_Jump'
+    description: Double Jump "works"
+    timeString: 2019-09-20T14:48:01.000-07:00
+    commitTimeString: 2019-09-20T14:48:01.000-07:00
+    changes: []
+  - commitID: 71f0c92ea5c1e81d7d643a5049111b784fce04b6
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: Worcester.Steve@Gmail.com
+    commitEmail: Worcester.Steve@Gmail.com
+    commitName: Steve Worcester
+    summary: Double Jump "works"
+    description: "Double Jump added.\r\nMoved Jumps into Skills section; i consider
+      jump both a move and a skill, but i moved to skills because of double jumping
+      - this was just personal preference\r\nInfinite jumps available due to tech
+      debt hack necessary until colliders are added to level.\r\n\r\nadded notes to
+      tech debt task about jumps."
+    timeString: 2019-09-20T14:47:08.000-07:00
+    commitTimeString: 2019-09-20T14:47:08.000-07:00
+    changes:
+    - path: Assets\Scripts\Player\Inputs.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\Inputs.cs
+      projectPath: Assets\Scripts\Player\Inputs.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\Player\PlayerPlatformerController.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\PlayerPlatformerController.cs
+      projectPath: Assets\Scripts\Player\PlayerPlatformerController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\Skills\Skills.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Skills\Skills.cs
+      projectPath: Assets\Scripts\Skills\Skills.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: dc578a0137b04f3f19793d9024749964e71507b5
+    mergeA: 66433b7e1b92a9645eaea9f30f78548649a7e1fd
+    mergeB: 07a6eec7f9a056e547366eeabcb2ca0792cd7016
+    authorName: Steve Worcester
+    authorEmail: worcester.steve@gmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: 'Merge pull request #18 from SteveWorcester/Jump'
+    description: Jump "Works"
+    timeString: 2019-09-20T13:32:09.000-07:00
+    commitTimeString: 2019-09-20T13:32:09.000-07:00
+    changes: []
+  - commitID: 07a6eec7f9a056e547366eeabcb2ca0792cd7016
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: Worcester.Steve@Gmail.com
+    commitEmail: Worcester.Steve@Gmail.com
+    commitName: Steve Worcester
+    summary: Jump "Works"
+    description: "Jump works, but there is no grounded mechanic; grounded requires
+      layermasks and colliders to be added to the level.\r\n\r\nThis added tech debt
+      to fix jumping after these are added. Task already added in github"
+    timeString: 2019-09-20T13:31:39.000-07:00
+    commitTimeString: 2019-09-20T13:31:39.000-07:00
+    changes:
+    - path: Assets\Scripts\Player\Inputs.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\Inputs.cs
+      projectPath: Assets\Scripts\Player\Inputs.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\Player\PlayerPlatformerController.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\PlayerPlatformerController.cs
+      projectPath: Assets\Scripts\Player\PlayerPlatformerController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 66433b7e1b92a9645eaea9f30f78548649a7e1fd
+    mergeA: b862f7424d349edac8213dbc77987bbd690f5508
+    mergeB: 0242a1d919fbf78e1a80b15502e9bb95ef8e4ea8
+    authorName: Steve Worcester
+    authorEmail: worcester.steve@gmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: 'Merge pull request #17 from SteveWorcester/Time_Dilation'
+    description: Movement works now
+    timeString: 2019-09-20T12:30:10.000-07:00
+    commitTimeString: 2019-09-20T12:30:10.000-07:00
+    changes: []
+  - commitID: 0242a1d919fbf78e1a80b15502e9bb95ef8e4ea8
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: Worcester.Steve@Gmail.com
+    commitEmail: Worcester.Steve@Gmail.com
+    commitName: Steve Worcester
+    summary: Move works
+    description: "- Updated movement - left/right works.\r\n- Jump still broken"
+    timeString: 2019-09-20T12:29:09.000-07:00
+    commitTimeString: 2019-09-20T12:29:09.000-07:00
+    changes:
+    - path: Assets\Scripts\Player\Inputs.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\Inputs.cs
+      projectPath: Assets\Scripts\Player\Inputs.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\Player\Movement.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\Movement.cs
+      projectPath: Assets\Scripts\Player\Movement.cs
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Scripts\Player\Movement.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\Movement.cs.meta
+      projectPath: Assets\Scripts\Player\Movement.cs.meta
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Scripts\Player\Player.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\Player.cs
+      projectPath: Assets\Scripts\Player\Player.cs
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Scripts\Player\Player.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\Player.cs.meta
+      projectPath: Assets\Scripts\Player\Player.cs.meta
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Scripts\Player\PlayerPlatformerController.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\PlayerPlatformerController.cs
+      projectPath: Assets\Scripts\Player\PlayerPlatformerController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 4561a58e12cfca5a9c64ecdc88f2527434dc7c25
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: Worcester.Steve@Gmail.com
+    commitEmail: Worcester.Steve@Gmail.com
+    commitName: Steve Worcester
+    summary: '  .'
+    description: ' .'
+    timeString: 2019-09-12T22:02:12.000-07:00
+    commitTimeString: 2019-09-12T22:02:12.000-07:00
+    changes:
+    - path: Assets\Scripts\Player.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player.meta
+      projectPath: Assets\Scripts\Player.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Player\Inputs.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\Inputs.cs
+      projectPath: Assets\Scripts\Player\Inputs.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Player\Inputs.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\Inputs.cs.meta
+      projectPath: Assets\Scripts\Player\Inputs.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Player\Movement.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\Movement.cs
+      projectPath: Assets\Scripts\Player\Movement.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Player\Movement.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\Movement.cs.meta
+      projectPath: Assets\Scripts\Player\Movement.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Player\Player.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\Player.cs
+      projectPath: Assets\Scripts\Player\Player.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Player\Player.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\Player.cs.meta
+      projectPath: Assets\Scripts\Player\Player.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Player\PlayerPlatformerController.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\PlayerPlatformerController.cs
+      projectPath: Assets\Scripts\Player\PlayerPlatformerController.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Player\PlayerPlatformerController.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Player\PlayerPlatformerController.cs.meta
+      projectPath: Assets\Scripts\Player\PlayerPlatformerController.cs.meta
+      originalPath: Assets\Scripts\PlayerPlatformerController.cs.meta
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Assets\Scripts\PlayerPlatformerController.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\PlayerPlatformerController.cs
+      projectPath: Assets\Scripts\PlayerPlatformerController.cs
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Scripts\SkillDirection.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\SkillDirection.cs
+      projectPath: Assets\Scripts\SkillDirection.cs
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Scripts\Skills.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Skills.meta
+      projectPath: Assets\Scripts\Skills.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Skills\Skills.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Skills\Skills.cs
+      projectPath: Assets\Scripts\Skills\Skills.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Skills\Skills.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Skills\Skills.cs.meta
+      projectPath: Assets\Scripts\Skills\Skills.cs.meta
+      originalPath: Assets\Scripts\SkillDirection.cs.meta
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Assets\Scripts\Skills\TimeDilation.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Skills\TimeDilation.cs
+      projectPath: Assets\Scripts\Skills\TimeDilation.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Skills\TimeDilation.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\Skills\TimeDilation.cs.meta
+      projectPath: Assets\Scripts\Skills\TimeDilation.cs.meta
+      originalPath: Assets\Scripts\TimeDilation.cs.meta
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Assets\Scripts\TimeDilation.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\TimeDilation.cs
+      projectPath: Assets\Scripts\TimeDilation.cs
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+  - commitID: b862f7424d349edac8213dbc77987bbd690f5508
+    mergeA: f0d1720c5a10bfe1b12ef7fa7945f990875acd47
+    mergeB: 8eac046cfeff16d9d1f351b153eb76b4edc58007
+    authorName: Steve Worcester
+    authorEmail: worcester.steve@gmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: 'Merge pull request #16 from SteveWorcester/Jump_and_Knockback'
+    description: jump and knockback
+    timeString: 2019-08-25T11:24:42.000-07:00
+    commitTimeString: 2019-08-25T11:24:42.000-07:00
+    changes: []
+  - commitID: 8eac046cfeff16d9d1f351b153eb76b4edc58007
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: Worcester.Steve@Gmail.com
+    commitEmail: Worcester.Steve@Gmail.com
+    commitName: Steve Worcester
+    summary: jump and knockback
+    description: "changed jump to charge space (maybe change to no charge?)\r\nadded
+      knockback on charge click"
+    timeString: 2019-08-25T11:21:11.000-07:00
+    commitTimeString: 2019-08-25T11:21:11.000-07:00
+    changes:
+    - path: Assets\Scripts\PlayerPlatformerController.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\PlayerPlatformerController.cs
+      projectPath: Assets\Scripts\PlayerPlatformerController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\SkillDirection.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\SkillDirection.cs
+      projectPath: Assets\Scripts\SkillDirection.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\TimeDilation.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\TimeDilation.cs
+      projectPath: Assets\Scripts\TimeDilation.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: f0d1720c5a10bfe1b12ef7fa7945f990875acd47
+    mergeA: f333e86488f51f28ffee4604467feb1992b222c5
+    mergeB: d20db424879a9b5a5c07866342b764a35863c1f3
+    authorName: Matt Worcester
+    authorEmail: Overlordmw@hotmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: 'Merge pull request #15 from SteveWorcester/BogDownInTheValleyO'
+    description: Animations and normalized vectors.
+    timeString: 2019-08-24T21:37:20.000-07:00
+    commitTimeString: 2019-08-24T21:37:20.000-07:00
+    changes: []
+  - commitID: d20db424879a9b5a5c07866342b764a35863c1f3
+    mergeA: 
+    mergeB: 
+    authorName: Zugyuk
+    authorEmail: Overlordmw@hotmail.com
+    commitEmail: Overlordmw@hotmail.com
+    commitName: Zugyuk
+    summary: Animations and normalized vectors.
+    description: 
+    timeString: 2019-08-24T21:36:22.000-07:00
+    commitTimeString: 2019-08-24T21:36:22.000-07:00
+    changes:
+    - path: Assets\Scenes\SampleScene.unity
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scenes\SampleScene.unity
+      projectPath: Assets\Scenes\SampleScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\PlayerPlatformerController.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\PlayerPlatformerController.cs
+      projectPath: Assets\Scripts\PlayerPlatformerController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\SkillDirection.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\SkillDirection.cs
+      projectPath: Assets\Scripts\SkillDirection.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Sprites\CharacterSprite.png
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\CharacterSprite.png
+      projectPath: Assets\Sprites\CharacterSprite.png
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Sprites\CharacterSprite.png.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\CharacterSprite.png.meta
+      projectPath: Assets\Sprites\CharacterSprite.png.meta
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Sprites\PlayerAnimationController.controller
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\PlayerAnimationController.controller
+      projectPath: Assets\Sprites\PlayerAnimationController.controller
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Sprites\Player_Idle.anim
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\Player_Idle.anim
+      projectPath: Assets\Sprites\Player_Idle.anim
+      originalPath: Assets\Sprites\PlayerStand.anim
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Assets\Sprites\Player_Idle.anim.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\Player_Idle.anim.meta
+      projectPath: Assets\Sprites\Player_Idle.anim.meta
+      originalPath: Assets\Sprites\PlayerMovement.anim.meta
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Assets\Sprites\Player_Jump.anim
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\Player_Jump.anim
+      projectPath: Assets\Sprites\Player_Jump.anim
+      originalPath: Assets\Sprites\PlayerMovement.anim
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Assets\Sprites\Player_Jump.anim.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\Player_Jump.anim.meta
+      projectPath: Assets\Sprites\Player_Jump.anim.meta
+      originalPath: Assets\Sprites\PlayerStand.anim.meta
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Assets\Sprites\Player_Run.anim
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\Player_Run.anim
+      projectPath: Assets\Sprites\Player_Run.anim
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Sprites\Player_Run.anim.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\Player_Run.anim.meta
+      projectPath: Assets\Sprites\Player_Run.anim.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: f333e86488f51f28ffee4604467feb1992b222c5
+    mergeA: 49cc0a3f7d672cc2d7a75bfefe9f15914be84704
+    mergeB: 115d8bfe44257e75a94088195d01670d63507f5f
+    authorName: Steve Worcester
+    authorEmail: worcester.steve@gmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: 'Merge pull request #14 from SteveWorcester/SteveNew'
+    description: fixed jumps.
+    timeString: 2019-08-24T13:07:39.000-07:00
+    commitTimeString: 2019-08-24T13:07:39.000-07:00
+    changes: []
+  - commitID: 115d8bfe44257e75a94088195d01670d63507f5f
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: Worcester.Steve@Gmail.com
+    commitEmail: Worcester.Steve@Gmail.com
+    commitName: Steve Worcester
+    summary: ' Fixed Jump'
+    description: "- Fix Jump directions\r\n- Add jump multiplier to easily fix height
+      of the jump. This can be found in PlayerPlatformerController.ComputeVelocity();\r\n-
+      Tested Jumps; they work."
+    timeString: 2019-08-24T13:06:51.000-07:00
+    commitTimeString: 2019-08-24T13:06:51.000-07:00
+    changes:
+    - path: Assets\Scripts\PhysicsObject.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\PhysicsObject.cs
+      projectPath: Assets\Scripts\PhysicsObject.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\PlayerPlatformerController.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\PlayerPlatformerController.cs
+      projectPath: Assets\Scripts\PlayerPlatformerController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\SkillDirection.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\SkillDirection.cs
+      projectPath: Assets\Scripts\SkillDirection.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: aca25eba2c2f5f5b6ec8d8fb03a10475d0c1df80
+    mergeA: 2e21f0797dc8f999f5675885c13ab4fbe809226c
+    mergeB: 49cc0a3f7d672cc2d7a75bfefe9f15914be84704
+    authorName: Steve Worcester
+    authorEmail: Worcester.Steve@Gmail.com
+    commitEmail: Worcester.Steve@Gmail.com
+    commitName: Steve Worcester
+    summary: Merge branch 'master' of https://github.com/SteveWorcester/Worcester-GameJam
+    description: 
+    timeString: 2019-08-24T11:01:35.000-07:00
+    commitTimeString: 2019-08-24T11:01:35.000-07:00
+    changes: []
+  - commitID: 49cc0a3f7d672cc2d7a75bfefe9f15914be84704
+    mergeA: 1d90a437642a40d88926e465d58a45639adf7c19
+    mergeB: 1c001d126d80cfafc959af1cfc364fab7ad41dab
+    authorName: Matt Worcester
+    authorEmail: Overlordmw@hotmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: 'Merge pull request #13 from SteveWorcester/MattBranch'
+    description: Changes 8-24
+    timeString: 2019-08-24T10:58:51.000-07:00
+    commitTimeString: 2019-08-24T10:58:51.000-07:00
+    changes: []
+  - commitID: 1c001d126d80cfafc959af1cfc364fab7ad41dab
+    mergeA: 
+    mergeB: 
+    authorName: Zugyuk
+    authorEmail: Overlordmw@hotmail.com
+    commitEmail: Overlordmw@hotmail.com
+    commitName: Zugyuk
+    summary: Changes 8-24
+    description: yup
+    timeString: 2019-08-24T10:58:14.000-07:00
+    commitTimeString: 2019-08-24T10:58:14.000-07:00
+    changes:
+    - path: Assets\Move.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Move.cs
+      projectPath: Assets\Move.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Move.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Move.cs.meta
+      projectPath: Assets\Move.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scenes\SampleScene.unity
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scenes\SampleScene.unity
+      projectPath: Assets\Scenes\SampleScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\PlayerPlatformerController.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\PlayerPlatformerController.cs
+      projectPath: Assets\Scripts\PlayerPlatformerController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\SkillDirection.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\SkillDirection.cs
+      projectPath: Assets\Scripts\SkillDirection.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Sprites\PlayerAnimation.controller
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\PlayerAnimation.controller
+      projectPath: Assets\Sprites\PlayerAnimation.controller
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Sprites\PlayerAnimationController.controller
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\PlayerAnimationController.controller
+      projectPath: Assets\Sprites\PlayerAnimationController.controller
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Sprites\PlayerAnimationController.controller.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\PlayerAnimationController.controller.meta
+      projectPath: Assets\Sprites\PlayerAnimationController.controller.meta
+      originalPath: Assets\Sprites\PlayerAnimation.controller.meta
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Assets\Sprites\PlayerMovement.anim
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\PlayerMovement.anim
+      projectPath: Assets\Sprites\PlayerMovement.anim
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Sprites\PlayerMovement.anim.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\PlayerMovement.anim.meta
+      projectPath: Assets\Sprites\PlayerMovement.anim.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Sprites\PlayerStand.anim
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\PlayerStand.anim
+      projectPath: Assets\Sprites\PlayerStand.anim
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Sprites\PlayerStand.anim.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\PlayerStand.anim.meta
+      projectPath: Assets\Sprites\PlayerStand.anim.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Stand.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Stand.cs
+      projectPath: Assets\Stand.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Stand.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Stand.cs.meta
+      projectPath: Assets\Stand.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: 1d90a437642a40d88926e465d58a45639adf7c19
+    mergeA: 4094ca54d06bc2ff793be081607e6dab9e763491
+    mergeB: 0a5b20d07c89111632c3c338262706baddbe2e82
+    authorName: Matt Worcester
+    authorEmail: Overlordmw@hotmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: 'Merge pull request #12 from SteveWorcester/MattBranch'
+    description: Jumps, bigger level, and Skill Direction slider attachment.
+    timeString: 2019-08-22T22:27:04.000-07:00
+    commitTimeString: 2019-08-22T22:27:04.000-07:00
+    changes: []
+  - commitID: 0a5b20d07c89111632c3c338262706baddbe2e82
+    mergeA: 
+    mergeB: 
+    authorName: Zugyuk
+    authorEmail: Overlordmw@hotmail.com
+    commitEmail: Overlordmw@hotmail.com
+    commitName: Zugyuk
+    summary: Jumps, bigger level, and Skill Direction slider attachment.
+    description: 
+    timeString: 2019-08-22T22:24:32.000-07:00
+    commitTimeString: 2019-08-22T22:24:32.000-07:00
+    changes:
+    - path: Assets\Scenes\SampleScene.unity
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scenes\SampleScene.unity
+      projectPath: Assets\Scenes\SampleScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\PlayerPlatformerController.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\PlayerPlatformerController.cs
+      projectPath: Assets\Scripts\PlayerPlatformerController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\SkillDirection.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\SkillDirection.cs
+      projectPath: Assets\Scripts\SkillDirection.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ProjectSettings\TagManager.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\TagManager.asset
+      projectPath: ProjectSettings\TagManager.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 4094ca54d06bc2ff793be081607e6dab9e763491
+    mergeA: 19de7908700095c4a79b6ebed70996ae41dc51ab
+    mergeB: 3372402485f4ab033862bb21a2c7d5b8f73ff806
+    authorName: Matt Worcester
+    authorEmail: Overlordmw@hotmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: 'Merge pull request #11 from SteveWorcester/MattBranch'
+    description: Matt branch
+    timeString: 2019-08-22T20:50:34.000-07:00
+    commitTimeString: 2019-08-22T20:50:34.000-07:00
+    changes: []
+  - commitID: 3372402485f4ab033862bb21a2c7d5b8f73ff806
+    mergeA: 7b701760b55c84a0f818d5d28f153862718ea0c7
+    mergeB: f0db80a28fd5de2f0becd33540ba9c865e41783d
+    authorName: Zugyuk
+    authorEmail: Overlordmw@hotmail.com
+    commitEmail: Overlordmw@hotmail.com
+    commitName: Zugyuk
+    summary: Merge branch 'MattBranch' of https://github.com/SteveWorcester/Worcester-GameJam
+      into MattBranch
+    description: 
+    timeString: 2019-08-22T20:49:34.000-07:00
+    commitTimeString: 2019-08-22T20:49:34.000-07:00
+    changes: []
+  - commitID: 7b701760b55c84a0f818d5d28f153862718ea0c7
+    mergeA: 
+    mergeB: 
+    authorName: Zugyuk
+    authorEmail: Overlordmw@hotmail.com
+    commitEmail: Overlordmw@hotmail.com
+    commitName: Zugyuk
+    summary: wtf2
+    description: 
+    timeString: 2019-08-22T20:49:29.000-07:00
+    commitTimeString: 2019-08-22T20:49:29.000-07:00
+    changes:
+    - path: Assets\Scenes\SampleScene.unity
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scenes\SampleScene.unity
+      projectPath: Assets\Scenes\SampleScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Sprites.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites.meta
+      projectPath: Assets\Sprites.meta
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ProjectSettings\QualitySettings.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\QualitySettings.asset
+      projectPath: ProjectSettings\QualitySettings.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ProjectSettings\UnityConnectSettings.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\UnityConnectSettings.asset
+      projectPath: ProjectSettings\UnityConnectSettings.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 24474c13401ae4effe1eeb583e6522006805363f
+    mergeA: 
+    mergeB: 
+    authorName: Zugyuk
+    authorEmail: Overlordmw@hotmail.com
+    commitEmail: Overlordmw@hotmail.com
+    commitName: Zugyuk
+    summary: wtf
+    description: 
+    timeString: 2019-08-22T20:49:02.000-07:00
+    commitTimeString: 2019-08-22T20:49:02.000-07:00
+    changes:
+    - path: Assets\Scenes\Main.unity
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scenes\Main.unity
+      projectPath: Assets\Scenes\Main.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scenes\Main.unity.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scenes\Main.unity.meta
+      projectPath: Assets\Scenes\Main.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: f0db80a28fd5de2f0becd33540ba9c865e41783d
+    mergeA: 6722c2d60797da70ff8e8d3f746a5c8096da2449
+    mergeB: 19de7908700095c4a79b6ebed70996ae41dc51ab
+    authorName: Matt Worcester
+    authorEmail: Overlordmw@hotmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: 'Merge pull request #10 from SteveWorcester/master'
+    description: 'Merge pull request #9 from SteveWorcester/MattBranch'
+    timeString: 2019-08-21T22:12:48.000-07:00
+    commitTimeString: 2019-08-21T22:12:48.000-07:00
+    changes: []
+  - commitID: 7963a6ac7cf0e9cd4172c046233d78cf32e240a4
+    mergeA: 
+    mergeB: 
+    authorName: Zugyuk
+    authorEmail: Overlordmw@hotmail.com
+    commitEmail: Overlordmw@hotmail.com
+    commitName: Zugyuk
+    summary: Not sure why these didn't submit
+    description: trying again?
+    timeString: 2019-08-21T22:10:03.000-07:00
+    commitTimeString: 2019-08-21T22:10:03.000-07:00
+    changes:
+    - path: Assets\Scripts\PhysicsObject.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\PhysicsObject.cs
+      projectPath: Assets\Scripts\PhysicsObject.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\PhysicsObject.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\PhysicsObject.cs.meta
+      projectPath: Assets\Scripts\PhysicsObject.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\PlayerPlatformerController.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\PlayerPlatformerController.cs
+      projectPath: Assets\Scripts\PlayerPlatformerController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 2e5020990c369fb3f6fe09d21c4dd693ef8dd96d
+    mergeA: 
+    mergeB: 
+    authorName: Zugyuk
+    authorEmail: Overlordmw@hotmail.com
+    commitEmail: Overlordmw@hotmail.com
+    commitName: Zugyuk
+    summary: Sprite work, and more playercharacter work
+    description: lots of changes.  yay
+    timeString: 2019-08-21T22:08:42.000-07:00
+    commitTimeString: 2019-08-21T22:08:42.000-07:00
+    changes:
+    - path: Assets\Prefabs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Prefabs.meta
+      projectPath: Assets\Prefabs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Prefabs\BlockPrefab1.prefab
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Prefabs\BlockPrefab1.prefab
+      projectPath: Assets\Prefabs\BlockPrefab1.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Prefabs\BlockPrefab1.prefab.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Prefabs\BlockPrefab1.prefab.meta
+      projectPath: Assets\Prefabs\BlockPrefab1.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Sprites\CharacterSprite.png
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\CharacterSprite.png
+      projectPath: Assets\Sprites\CharacterSprite.png
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Sprites\CharacterSprite.png.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\CharacterSprite.png.meta
+      projectPath: Assets\Sprites\CharacterSprite.png.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Sprites\Physics Material 2D.physicsMaterial2D
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\Physics
+        Material 2D.physicsMaterial2D
+      projectPath: Assets\Sprites\Physics Material 2D.physicsMaterial2D
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Sprites\Physics Material 2D.physicsMaterial2D.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\Physics
+        Material 2D.physicsMaterial2D.meta
+      projectPath: Assets\Sprites\Physics Material 2D.physicsMaterial2D.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Sprites\PlayerAnimation.controller
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\PlayerAnimation.controller
+      projectPath: Assets\Sprites\PlayerAnimation.controller
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Sprites\PlayerAnimation.controller.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\PlayerAnimation.controller.meta
+      projectPath: Assets\Sprites\PlayerAnimation.controller.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Sprites\RuinsSprites.png
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\RuinsSprites.png
+      projectPath: Assets\Sprites\RuinsSprites.png
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Sprites\RuinsSprites.png.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites\RuinsSprites.png.meta
+      projectPath: Assets\Sprites\RuinsSprites.png.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: 2e21f0797dc8f999f5675885c13ab4fbe809226c
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: Worcester.Steve@Gmail.com
+    commitEmail: Worcester.Steve@Gmail.com
+    commitName: Steve Worcester
+    summary: test
+    description: test
+    timeString: 2019-08-19T19:32:33.000-07:00
+    commitTimeString: 2019-08-19T19:32:33.000-07:00
+    changes:
+    - path: Assets\Sprites.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites.meta
+      projectPath: Assets\Sprites.meta
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+  - commitID: 19de7908700095c4a79b6ebed70996ae41dc51ab
+    mergeA: 257bf786916f5b9c8518088f7b6550be4e523c31
+    mergeB: 6722c2d60797da70ff8e8d3f746a5c8096da2449
+    authorName: Matt Worcester
+    authorEmail: Overlordmw@hotmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: 'Merge pull request #9 from SteveWorcester/MattBranch'
+    description: Folders and the start of the player controller.
+    timeString: 2019-08-07T23:27:45.000-07:00
+    commitTimeString: 2019-08-07T23:27:45.000-07:00
+    changes: []
+  - commitID: 6722c2d60797da70ff8e8d3f746a5c8096da2449
+    mergeA: a7ef315a4c75f834ce15b95eb8dd173adf0e87b9
+    mergeB: 257bf786916f5b9c8518088f7b6550be4e523c31
+    authorName: Matt Worcester
+    authorEmail: Overlordmw@hotmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Merge branch 'master' into MattBranch
+    description: 
+    timeString: 2019-08-07T23:27:35.000-07:00
+    commitTimeString: 2019-08-07T23:27:35.000-07:00
+    changes: []
+  - commitID: 257bf786916f5b9c8518088f7b6550be4e523c31
+    mergeA: 22fe8368b8e068448103265f847cf2d09ecd4c2f
+    mergeB: 8a70627baf96de637c9f3cde4d3b23e8465693ce
+    authorName: Steve Worcester
+    authorEmail: worcester.steve@gmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: 'Merge pull request #8 from SteveWorcester/TimeDilation'
+    description: Time dilation
+    timeString: 2019-08-02T18:42:43.000-07:00
+    commitTimeString: 2019-08-02T18:42:43.000-07:00
+    changes: []
+  - commitID: 8a70627baf96de637c9f3cde4d3b23e8465693ce
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: Worcester.Steve@Gmail.com
+    commitEmail: Worcester.Steve@Gmail.com
+    commitName: Steve Worcester
+    summary: 
+    description: 
+    timeString: 2019-08-02T18:40:50.000-07:00
+    commitTimeString: 2019-08-02T18:40:50.000-07:00
+    changes:
+    - path: Assets\Scripts\TimeDilation.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\TimeDilation.cs
+      projectPath: Assets\Scripts\TimeDilation.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 9df62f001d57dc2e8d790a5a66025c435311ef2e
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: Worcester.Steve@Gmail.com
+    commitEmail: Worcester.Steve@Gmail.com
+    commitName: Steve Worcester
+    summary: '- Add prototype time dilation class so ability wheel can utilize it.'
+    description: '- Untested; requires action/ability caster to test'
+    timeString: 2019-08-02T18:39:50.000-07:00
+    commitTimeString: 2019-08-02T18:39:50.000-07:00
+    changes:
+    - path: Assets\Scripts\TimeDilation.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\TimeDilation.cs
+      projectPath: Assets\Scripts\TimeDilation.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\TimeDilation.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\TimeDilation.cs.meta
+      projectPath: Assets\Scripts\TimeDilation.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: 22fe8368b8e068448103265f847cf2d09ecd4c2f
+    mergeA: 35e19e4eafbfa470e546e2b247a8f044f105a0d5
+    mergeB: 01c63aa219fd8736940d76a62eb7853f74742e4f
+    authorName: Steve Worcester
+    authorEmail: worcester.steve@gmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: 'Merge pull request #7 from SteveWorcester/PROTO_SkillDirection'
+    description: '[PROTO] Implement a way for skills to be aimed at the mouse cursor.'
+    timeString: 2019-08-01T18:40:20.000-07:00
+    commitTimeString: 2019-08-01T18:40:20.000-07:00
+    changes: []
+  - commitID: 01c63aa219fd8736940d76a62eb7853f74742e4f
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: Worcester.Steve@Gmail.com
+    commitEmail: Worcester.Steve@Gmail.com
+    commitName: Steve Worcester
+    summary: '- implement SkillDirection prototype to work off of main camera.'
+    description: '- Untested; no way to use without a main camera setup.'
+    timeString: 2019-08-01T18:38:55.000-07:00
+    commitTimeString: 2019-08-01T18:38:55.000-07:00
+    changes:
+    - path: Assets\Scripts\SkillDirection.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\SkillDirection.cs
+      projectPath: Assets\Scripts\SkillDirection.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 35e19e4eafbfa470e546e2b247a8f044f105a0d5
+    mergeA: 93fba88a7740fa108d20af80ba72de983afdc5d0
+    mergeB: 4c8ca9ac8baa6fb5f72e3fe90d50f9194df8b4e9
+    authorName: Steve Worcester
+    authorEmail: worcester.steve@gmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: PROTO directional skill script
+    description: " - Add directional skill script\r\n- Skills' default aiming position
+      will be UP\r\n- Untested - No gameobjects to test against.\r\n-- This is currently
+      working off of main camera instead of a gameobject due to lack of game objects.
+      This may need to be changed in the future to get the desired result."
+    timeString: 2019-07-31T18:59:42.000-07:00
+    commitTimeString: 2019-07-31T18:59:42.000-07:00
+    changes: []
+  - commitID: 4c8ca9ac8baa6fb5f72e3fe90d50f9194df8b4e9
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: Worcester.Steve@Gmail.com
+    commitEmail: Worcester.Steve@Gmail.com
+    commitName: Steve Worcester
+    summary: '- Add directional skill script'
+    description: "- Skills' default aiming position will be UP\r\n- Untested - No
+      gameobjects to test against.\r\n-- This is currently working off of main camera
+      instead of a gameobject due to lack of game objects. This may need to be changed
+      in the future to get the desired result."
+    timeString: 2019-07-31T18:56:08.000-07:00
+    commitTimeString: 2019-07-31T18:56:08.000-07:00
+    changes:
+    - path: Assets\Scripts.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts.meta
+      projectPath: Assets\Scripts.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\SkillDirection.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\SkillDirection.cs
+      projectPath: Assets\Scripts\SkillDirection.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\SkillDirection.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\SkillDirection.cs.meta
+      projectPath: Assets\Scripts\SkillDirection.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\EditorSettings.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\EditorSettings.asset
+      projectPath: ProjectSettings\EditorSettings.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: a7ef315a4c75f834ce15b95eb8dd173adf0e87b9
+    mergeA: 
+    mergeB: 
+    authorName: Zugyuk
+    authorEmail: Overlordmw@hotmail.com
+    commitEmail: Overlordmw@hotmail.com
+    commitName: Zugyuk
+    summary: Folders and the start of the player controller.
+    description: 
+    timeString: 2019-07-30T21:58:59.000-07:00
+    commitTimeString: 2019-07-30T21:58:59.000-07:00
+    changes:
+    - path: Assets\Scripts.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts.meta
+      projectPath: Assets\Scripts.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\PlayerPlatformerController.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\PlayerPlatformerController.cs
+      projectPath: Assets\Scripts\PlayerPlatformerController.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\PlayerPlatformerController.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scripts\PlayerPlatformerController.cs.meta
+      projectPath: Assets\Scripts\PlayerPlatformerController.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Sprites.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Sprites.meta
+      projectPath: Assets\Sprites.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: 93fba88a7740fa108d20af80ba72de983afdc5d0
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: Worcester.Steve@Gmail.com
+    commitEmail: Worcester.Steve@Gmail.com
+    commitName: Steve Worcester
+    summary: Project_Creation
+    description: Initial commit to create project
+    timeString: 2019-07-30T18:38:39.000-07:00
+    commitTimeString: 2019-07-30T18:38:39.000-07:00
+    changes:
+    - path: Assets\Plugins.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins.meta
+      projectPath: Assets\Plugins.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub.meta
+      projectPath: Assets\Plugins\GitHub.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor.meta
+      projectPath: Assets\Plugins\GitHub\Editor.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+      projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+      projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+      projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.mdb
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.mdb
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.mdb
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.mdb.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.mdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.mdb.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+      projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+      projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+      projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+      projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\System.Threading.dll
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\System.Threading.dll
+      projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+      projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+      projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\big-logo@2x.png
+      projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+      projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\credits.txt
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\credits.txt
+      projectPath: Assets\Plugins\GitHub\Editor\credits.txt
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\credits.txt.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\credits.txt.meta
+      projectPath: Assets\Plugins\GitHub\Editor\credits.txt.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\eula.txt
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\eula.txt
+      projectPath: Assets\Plugins\GitHub\Editor\eula.txt
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\eula.txt.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\eula.txt.meta
+      projectPath: Assets\Plugins\GitHub\Editor\eula.txt.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\libsfw.bundle
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\libsfw.bundle
+      projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+      projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\libsfw.so
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\libsfw.so
+      projectPath: Assets\Plugins\GitHub\Editor\libsfw.so
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\libsfw.so.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\libsfw.so.meta
+      projectPath: Assets\Plugins\GitHub\Editor\libsfw.so.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\sfw.net.dll
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\sfw.net.dll
+      projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\x64.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\x64.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x64.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+      projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+      projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\x86.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\x86.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x86.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+      projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+      projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scenes.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scenes.meta
+      projectPath: Assets\Scenes.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scenes\SampleScene.unity
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scenes\SampleScene.unity
+      projectPath: Assets\Scenes\SampleScene.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scenes\SampleScene.unity.meta
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Assets\Scenes\SampleScene.unity.meta
+      projectPath: Assets\Scenes\SampleScene.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Logs\Packages-Update.log
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Logs\Packages-Update.log
+      projectPath: Logs\Packages-Update.log
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Packages\manifest.json
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\Packages\manifest.json
+      projectPath: Packages\manifest.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\AudioManager.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\AudioManager.asset
+      projectPath: ProjectSettings\AudioManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\ClusterInputManager.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\ClusterInputManager.asset
+      projectPath: ProjectSettings\ClusterInputManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\DynamicsManager.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\DynamicsManager.asset
+      projectPath: ProjectSettings\DynamicsManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\EditorBuildSettings.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\EditorBuildSettings.asset
+      projectPath: ProjectSettings\EditorBuildSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\EditorSettings.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\EditorSettings.asset
+      projectPath: ProjectSettings\EditorSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\GraphicsSettings.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\GraphicsSettings.asset
+      projectPath: ProjectSettings\GraphicsSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\InputManager.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\InputManager.asset
+      projectPath: ProjectSettings\InputManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\NavMeshAreas.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\NavMeshAreas.asset
+      projectPath: ProjectSettings\NavMeshAreas.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\NetworkManager.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\NetworkManager.asset
+      projectPath: ProjectSettings\NetworkManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\Physics2DSettings.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\Physics2DSettings.asset
+      projectPath: ProjectSettings\Physics2DSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\PresetManager.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\PresetManager.asset
+      projectPath: ProjectSettings\PresetManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\ProjectSettings.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\ProjectSettings.asset
+      projectPath: ProjectSettings\ProjectSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\ProjectVersion.txt
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\ProjectVersion.txt
+      projectPath: ProjectSettings\ProjectVersion.txt
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\QualitySettings.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\QualitySettings.asset
+      projectPath: ProjectSettings\QualitySettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\TagManager.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\TagManager.asset
+      projectPath: ProjectSettings\TagManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\TimeManager.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\TimeManager.asset
+      projectPath: ProjectSettings\TimeManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\UnityConnectSettings.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\UnityConnectSettings.asset
+      projectPath: ProjectSettings\UnityConnectSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\VFXManager.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\VFXManager.asset
+      projectPath: ProjectSettings\VFXManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\XRSettings.asset
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\ProjectSettings\XRSettings.asset
+      projectPath: ProjectSettings\XRSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: 75e8ff60d0b47652ccf49e334110d18053f03158
+    mergeA: 
+    mergeB: 
+    authorName: Steve Worcester
+    authorEmail: worcester.steve@gmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Initial commit
+    description: 
+    timeString: 2019-07-29T22:11:37.000-07:00
+    commitTimeString: 2019-07-29T22:11:37.000-07:00
+    changes:
+    - path: .gitignore
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: README.md
+      fullPath: C:\Users\Worce\OneDrive\Documents\GitHub\Worcester-GameJam\README.md
+      projectPath: README.md
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
